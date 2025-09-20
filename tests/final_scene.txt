@@ -1,0 +1,23 @@
+Camera (0.5, 0.2, -0.2) (0, 0, 1) 0 1
+
+Material "Red" (.1, .05, .05) (1, .5, .5) (0, 0, 0) 0 0 0 1
+Material "Green" (.05, .1, .05) (.5, 1, .5) (0, 0, 0) 0 0 0 1
+Material "Blue" (.05, .05, .1) (.5, .5, 1) (0, 0, 0) 0 0 0 1
+Material "Gray" (.05, .05, .05) (.6, .6, .6) (0, 0, 0) 0 0 0 1
+Material "MirrorMat" (0, 0, 0) (0, 0, 0) (0, 0, 0) 0 1 0 1
+Material "GlassMat"  (0, 0, 0) (0, 0, 0) (0, 0, 0) 0 0 1 1.4
+
+PointLight "Light" (-1, 4, 3) (1.0, 0.84, 0.66)
+
+ObjModel "BunnyRed" "tests/models/bunny.obj" (-3, -1.6, 6) (0, 0, 1) 0 1 "Red"
+ObjModel "BunnyGreen" "tests/models/bunny.obj" (2, 1, 8) (0, 0, 1) 0 1 "Green"
+ObjModel "BunnyBlue" "tests/models/bunny.obj" (1, -1.2, 12) (0, 0, 1) 0 1 "Blue"
+
+Sphere "MirrorSphere" (1.5, 2, 3.8) 0.6 "MirrorMat"
+Sphere "GlassSphere" (0.5, 0, 3.5) 0.5 "GlassMat"
+
+Plane "Ground" (0, -2, 0) (0, 1, 0) "Gray"
+
+SimpleAnimation "BunnyRed" (0.15, 0, 0) (0, 1, 0) 30
+SimpleAnimation "BunnyGreen" (-0.1, 0, 0) (0, 1, 0) 20
+SimpleAnimation "BunnyBlue" (-0.05, 0, -0.15) (0, 1, 0) 10

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RayTracer": {
+      "commandName": "Project",
+      "commandLineArgs": "dotnet run -- -f C:\\uni\\25s2\\comp30019\\projects\\project_1\\2025s2-project-1-kev-fbx\\tests\\sample_scene_anim_simple.txt -m 12 -s 12"
+    }
+  }
+}
