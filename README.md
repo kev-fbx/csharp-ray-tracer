@@ -1,4 +1,4 @@
-# Ray Tracer C# Program: University Project
+# C# Ray Tracer Program: University Project
 
 ## Final scene render
 
