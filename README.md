@@ -13,6 +13,7 @@ dotnet run -- -f tests/final_scene.txt -x 3 --aperture-radius 0.04 --focal-lengt
 ```
 
 ## Implemented Features
+- Ray tracing logic
 - Whitted Illumination Shading Model
 - OBJ file loading with BVH data structure optimisation
 - Custom camera transforms
